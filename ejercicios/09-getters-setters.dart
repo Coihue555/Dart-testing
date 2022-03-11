@@ -19,7 +19,7 @@ class Cuadrado{
   double lado;
 
   double get area {
-    retrun  this.lado * this.lado;
+    return  this.lado * this.lado;
   }
 
   set area(double valor){

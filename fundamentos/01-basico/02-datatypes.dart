@@ -20,20 +20,39 @@ main(){
 Hello friend,
 its been a while''';
 
-  print(multilinea);
+  //print(multilinea);
 
   //==Listas
   //var villanos = ['Lex Luthor', 'Red Skull', 'Doom'];
   List<String> villanos = ['Lex Luthor', 'Red Skull', 'Doom'];
+  //print('Lista...');
+  villanos.add('Loki');
+  villanos.add('Loki');
+  villanos.add('Loki');
+  villanos.add('Loki');
+  //print(villanos);
 
-  villanos[0] = 'Superman';
+  var villanosSet = villanos.toSet();
 
-  print(villanos);
+  //print(villanosSet.toList());
+
+  
 
 
   //==Sets
+  //print('Set...');
+  Set<String> villanos2 = {'Lex Luthor', 'Red Skull', 'Doom'};
+ 
+  villanos2.add('Loki');
+  villanos2.add('Loki');
+  villanos2.add('Loki');
+  print(villanos2);
+  //print('...');
+  //print('Los sets no aceptan duplicados...');
 
-  
+
+  //==Maps
+
 
 
 }

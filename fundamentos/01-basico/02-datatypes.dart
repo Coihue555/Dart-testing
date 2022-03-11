@@ -35,6 +35,7 @@ its been a while''';
   var villanosSet = villanos.toSet();
 
   //print(villanosSet.toList());
+  
 
   
 
@@ -52,7 +53,33 @@ its been a while''';
 
 
   //==Maps
+  Map<String, dynamic> ironman = {
+    'nombre'  : 'Tony',
+    'poder'   : 'Inteligencia y dinero',
+    'nivel'   : 900,
+  };
+  //imprimir Map
+  print(ironman);
+  //Imprimir elemento de List
+  print('elemento de Lista:');
+  print(villanos[1]);
+  //Imprimir elemento de Set
+  print('elemento de Set:');
+  print(villanos2.elementAt(1));
+  //Imprimir elemento de Map
+  print('elemento de Map:');
+  print(ironman['nivel']);
 
+  Map<String, dynamic> capitan = new Map();
+  //capitan.addAll({
+  //  'nombre': 'Steve',
+  //  'poder': 'junkie XL',
+  //  'nivel': 9000,
+ // });
+
+  capitan.addAll(ironman);
+
+  print(capitan);
 
 
 }

@@ -1,7 +1,7 @@
 void main(List<String> args) {
   int a = 10, b = 20;
   int resultado = sumar(a, b);
-  //print(resultado);
+  print(resultado);
 
   List<int> listado = [1,2,3,4,5,6,6,7,8,9,10,10,1];
 

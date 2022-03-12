@@ -2,6 +2,9 @@ import 'dart:io';
 
 main(){
 
-stdout.write('¿who are you?');
+stdout.writeln('¿who are you?');
+String? nombre = stdin.readLineSync( );
+
+stdout.writeln('Tu nombre es: $nombre');
 
 }

@@ -17,16 +17,21 @@ class Persona {
   //CONSTRUCTORES
   // Persona( int edad, String nombre){
   //   this.edad = edad;
-  //   this.nombre = nombre;
+  //   this.nombre = nombre;                            //Persona(this.edad, this.nombre);
   // }
-  //
-  //Persona(this.edad, this.nombre);
-  //Persona(this.edad, {this.nombre})             //Aca this.nombre es opcional con nombre
-  //Persona(this.edad, {this.nombre = 'Maria'})   //Aca es opcional con nombre, y con un valor predeterminado
-  Persona({required this.edad, this.nombre = 'Maria'});
+  
+  
+  //Persona(this.edad, {this.nombre})                   //Aca this.nombre es opcional con nombre
+  //Persona(this.edad, {this.nombre = 'Maria'})         //Aca es opcional con nombre, y con un valor predeterminado
+  Persona({required this.edad, this.nombre = 'Maria'}); //edad es un param con nombre pero requerido, ojo
+
+  Persona.persona30(this.nombre){                       //Asi se puede crear otro tipo de constructor aparte
+    this.edad = 30;
+  }
+  
   //METODOS(funciones)
   @override
   String toString() {
-    return '$nombre - $edad: $_bio';      //String toString() => '$nombre - $edad: $bio';
+    return '$nombre - $edad: $_bio';                    //String toString() => '$nombre - $edad: $bio';
   }
 }

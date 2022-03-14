@@ -9,6 +9,6 @@ void saludar2(String mensaje, {required String nombre, int veces = 10 }){
 }
 
 main(List<String> args){
-  saludar('Hola');
+  saludar('Hola', 'Andy', 34);
   saludar2('Buenas..', nombre: 'Andres', veces: 20);
 }

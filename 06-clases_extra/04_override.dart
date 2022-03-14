@@ -15,11 +15,18 @@ class Cliente extends Persona{
   Cliente(int edadActual, String nombreActual):
     super(nombreActual, edadActual);
 
+  @override
+  void imprimirNombre(){
+    super.imprimirNombre();
+    print('Cliente: $nombre, ($edad)');
+  }
+
 }
 
 
 
 main(){
   final pedro = new Cliente(31, 'Pedro');
+  
   pedro.imprimirNombre();
 }

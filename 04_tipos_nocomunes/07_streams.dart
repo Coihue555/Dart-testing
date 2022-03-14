@@ -3,7 +3,7 @@ import 'dart:async';
 
 void main() {
   
-  final streamController = new StreamController<String>.broadcast();
+  final streamController = new StreamController<String>.broadcast(); //broadcast permite que hayan 2 listeners
 
   streamController.stream.listen(
     (data) => print('Despegando! $data'), 

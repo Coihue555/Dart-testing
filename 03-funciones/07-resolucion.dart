@@ -22,7 +22,6 @@ void main() {
 
 
 
-void escribirAPantalla(String pregunta){
-  stdout.writeln('$pregunta');
-}
+void escribirAPantalla(String pregunta) => stdout.writeln('$pregunta');
+
 

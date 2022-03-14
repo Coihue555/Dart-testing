@@ -1,10 +1,11 @@
 
 class Persona {
-  //campos o propiedades
+  //CAMPOS O PROPIEDADES
   String? nombre;
   int? edad;
   String _bio = 'Propiedad privada';
-  //getters and setters
+
+  //GETTERS & SETTERS
   String get bio {
     return _bio.toUpperCase();            //alternativamente, se puede escribir como una funcion de flecha
   }                                       //String get info => _bio.toUpperCase();
@@ -13,9 +14,17 @@ class Persona {
     _bio = texto;
   }
 
-  //constructores
-
-  //metodos(funciones)
+  //CONSTRUCTORES
+  // Persona( int edad, String nombre){
+  //   this.edad = edad;
+  //   this.nombre = nombre;
+  // }
+  //
+  //Persona(this.edad, this.nombre);
+  //Persona(this.edad, {this.nombre})             //Aca this.nombre es opcional con nombre
+  //Persona(this.edad, {this.nombre = 'Maria'})   //Aca es opcional con nombre, y con un valor predeterminado
+  Persona({required this.edad, this.nombre = 'Maria'});
+  //METODOS(funciones)
   @override
   String toString() {
     return '$nombre - $edad: $_bio';      //String toString() => '$nombre - $edad: $bio';

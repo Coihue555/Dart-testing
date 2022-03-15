@@ -9,7 +9,7 @@
             "name": "paquetes",
             "request": "launch",
             "type": "dart",
-            "program": "bin/paquetes.dart"
+            "program": "/bin/paquetes.dart"
         }
     ]
 }
